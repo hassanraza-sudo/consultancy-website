@@ -1,0 +1,42 @@
+import React from "react";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import BookConsultation from "./BookConsultation";
+
+const Hero = () => {
+  return (
+    <div className="relative bg-midnight-blue">
+      <div className="absolute inset-0">
+        <img
+          className="w-full h-full object-cover opacity-20"
+          src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=1200"
+          alt="Students studying abroad"
+        />
+      </div>
+      <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+        <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+          Your Journey to Study Abroad Starts Here
+        </h1>
+        <p className="mt-6 text-xl text-gray-300 max-w-3xl">
+          Expert guidance for international students seeking quality education
+          in Germany and worldwide. From university selection to visa support,
+          we're with you every step of the way.
+        </p>
+        <div className="mt-10 flex space-x-4">
+          <BookConsultation
+            consultationType="free"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sky-blue hover:bg-sky-700"
+          />
+          <Link
+            to="/services"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-transparent border-white hover:bg-white hover:text-midnight-blue"
+          >
+            Our Services
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
