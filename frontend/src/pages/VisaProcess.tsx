@@ -35,6 +35,7 @@ const VisaProcess = () => {
   return (
     <div className="p-6 md:p-12 bg-gray-50 min-h-screen">
       <div className="max-w-4xl mx-auto bg-white shadow-md rounded-xl p-8">
+        {/* Header */}
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-3xl font-bold text-gray-800">
             <FileText className="inline-block w-7 h-7 text-blue-500 mr-2" />
@@ -49,12 +50,14 @@ const VisaProcess = () => {
           </Link>
         </div>
 
+        {/* Working Image */}
         <img
-          src="https://www.daad.de/image/daad_de/preview_visa.jpg"
+          src="https://www.msmunify.com/wp-content/uploads/2023/09/How-to-get-a-USA-Student-Visa.png"
           alt="Visa Process"
           className="w-full h-64 object-cover rounded-lg mb-6"
         />
 
+        {/* Accordion Steps */}
         <div className="space-y-4">
           {steps.map((step, index) => (
             <div

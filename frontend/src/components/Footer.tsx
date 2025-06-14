@@ -61,15 +61,15 @@ const Footer = () => {
           <ul className="text-sm text-gray-300 space-y-3">
             <li className="flex items-center">
               <Phone className="h-4 w-4 mr-2 text-sky-400" />
-              +92 301 2984495
+              +49 1575 3620211
             </li>
             <li className="flex items-center">
               <Mail className="h-4 w-4 mr-2 text-sky-400" />
-              info@beaconvision.com
+              info@stuien-route.com
             </li>
             <li className="flex items-center">
               <MapPin className="h-4 w-4 mr-2 text-sky-400" />
-              Bhiria City, Sindh, Pakistan
+              Berlin, Germany
             </li>
           </ul>
         </div>
