@@ -18,9 +18,10 @@ const Hero = () => {
           Your Journey to Study Abroad Starts Here
         </h1>
         <p className="mt-6 text-xl text-gray-300 max-w-3xl">
-          Expert guidance for international students seeking quality education
-          in Germany and worldwide. From university selection to visa support,
-          we're with you every step of the way.
+          At our core, we are dedicated to guiding ambitious students toward a
+          future defined by excellence. By laying a strong academic and
+          professional foundation, we empower them to stand out and succeed in
+          today’s highly competitive global landscape.
         </p>
         <div className="mt-10 flex space-x-4">
           <BookConsultation

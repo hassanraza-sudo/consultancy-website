@@ -17,9 +17,9 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">About Us</h3>
           <p className="text-gray-300 text-sm leading-relaxed">
-            We are dedicated to guiding students on their journey to study
-            abroad, offering personalized support from university selection to
-            visa assistance. Your success is our mission.
+            Studien-route is your trusted guide to studying in Germany, offering
+            tailored support for students' academic and personal needs today and
+            for the future.
           </p>
         </div>
 
