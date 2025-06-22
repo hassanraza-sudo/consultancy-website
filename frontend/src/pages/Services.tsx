@@ -10,7 +10,7 @@ const Services = () => {
       description: "Ideal for students starting their application process.",
       features: [
         "Motivation letter writing (1 draft + 1 revision)",
-        "University/course consultation (45 mins)",
+        "University/course consultation (25 mins)",
         "Email support (up to 5 follow-ups)",
       ],
       type: "starter",
@@ -61,9 +61,9 @@ const Services = () => {
     { title: "CV Editing", price: "€39" },
     { title: "German Language Course (10 sessions)", price: "€149" },
     { title: "Airport Pick-up", price: "€50" },
-    { title: "City Registration (Anmeldung)", price: "€60" },
+    { title: "City Registration (Anmeldung)", price: "€30" },
     { title: "Health Insurance Setup", price: "€30" },
-    { title: "Accommodation Assistance", price: "€99" },
+    { title: "Accommodation Assistance", price: "€199" },
     { title: "University Consultation (1 hour)", price: "€49" },
   ];
 
@@ -121,10 +121,10 @@ const Services = () => {
                     ))}
                   </ul>
                 </div>
-                <BookConsultation
+                {/* <BookConsultation
                   consultationType={pkg.type}
                   className="mt-6 w-full bg-sky-blue text-white py-2 px-4 rounded-md hover:bg-sky-700"
-                />
+                /> */}
               </div>
             ))}
           </div>

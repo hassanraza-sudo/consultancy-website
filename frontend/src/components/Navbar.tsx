@@ -14,7 +14,7 @@ const Navbar = () => {
             <Link to="/" className="flex items-center">
               <GraduationCap className="h-8 w-8 text-sky-blue" />
               <span className="ml-2 text-xl font-bold text-white">
-                Studienhilfe
+                StudienRoute
               </span>
             </Link>
           </div>
@@ -42,19 +42,19 @@ const Navbar = () => {
             >
               Study In Germany
             </Link>
-            <Link
+            {/* <Link
               to="/blog"
               className="text-white hover:text-sky-blue px-3 py-2"
             >
               Blog
-            </Link>
+            </Link> */}
             <Link
               to="/contact"
               className="text-white hover:text-sky-blue px-3 py-2"
             >
               Contact
             </Link>
-            <BookConsultation />
+            {/* <BookConsultation /> */}
           </div>
 
           {/* Mobile Menu Button */}

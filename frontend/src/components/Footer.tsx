@@ -48,9 +48,9 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to="/book" className="hover:text-white">
+              {/* <Link to="/book" className="hover:text-white">
                 Book Consultation
-              </Link>
+              </Link> */}
             </li>
           </ul>
         </div>
@@ -65,7 +65,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center">
               <Mail className="h-4 w-4 mr-2 text-sky-400" />
-              info@stuien-route.com
+              info@studien-route.com
             </li>
             <li className="flex items-center">
               <MapPin className="h-4 w-4 mr-2 text-sky-400" />
@@ -93,8 +93,7 @@ const Footer = () => {
 
       {/* Bottom */}
       <div className="border-t border-gray-700 py-6 text-center text-sm text-gray-400">
-        &copy; {new Date().getFullYear()} Beacon BhiriaVision. All rights
-        reserved.
+        &copy; {new Date().getFullYear()} Studienhilfe. All rights reserved.
       </div>
     </footer>
   );

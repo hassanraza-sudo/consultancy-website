@@ -18,9 +18,9 @@ const services = [
   },
   {
     id: 2,
-    title: "Scholarship & Funding Support",
+    title: "German Language Course Package",
     description:
-      "Access to extensive database of scholarships and guidance on funding opportunities.",
+      "Access our beginner-friendly language course designed specifically for international students moving to Germany.",
   },
 ];
 
@@ -30,6 +30,7 @@ const Home = () => {
   }, []);
 
   const [activeService, setActiveService] = useState(null);
+  const [isCoursePaid, setIsCoursePaid] = useState(false);
 
   const toggleService = (id) => {
     setActiveService((prev) => (prev === id ? null : id));
@@ -163,22 +164,59 @@ const Home = () => {
                     )}
                     {service.id === 2 && (
                       <>
-                        <p>
-                          <strong>Scholarship & Funding Support</strong>
+                        {isCoursePaid ? (
+                          <div>
+                            {/* Actual video/course content or links */}
+                            <p>Welcome to your course dashboard!</p>
+                            <ul className="list-disc ml-6">
+                              <li>
+                                <a
+                                  href="/language-course/module-1"
+                                  className="text-blue-600 underline"
+                                >
+                                  Module 1: Basics
+                                </a>
+                              </li>
+                              {/* Add more modules */}
+                            </ul>
+                          </div>
+                        ) : (
+                          <>
+                            <p>
+                              This course is locked. Please make payment to
+                              access the course.
+                            </p>
+                            <button
+                              onClick={() => {
+                                // fake trigger for now
+                                setIsCoursePaid(true);
+                                alert(
+                                  "Simulated payment success! Now showing course."
+                                );
+                              }}
+                              className="mt-4 inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+                            >
+                              Pay & Unlock
+                            </button>
+                          </>
+                        )}
+
+                        <p className="font-semibold">
+                          Master Basic German Before You Arrive!
                         </p>
                         <p>
-                          We provide access to a comprehensive database of
-                          scholarship opportunities and help you understand the
-                          criteria, deadlines, and application requirements.
+                          Our German language course is perfect for students
+                          preparing to study or live in Germany. It’s designed
+                          to help you with:
                         </p>
                         <ul className="list-disc ml-6">
+                          <li>Common German phrases and vocabulary</li>
+                          <li>Pronunciation and grammar basics</li>
                           <li>
-                            Guidance on scholarship search and eligibility
+                            Real-life situations: shopping, traveling,
+                            university communication
                           </li>
-                          <li>
-                            Help with application forms and supporting documents
-                          </li>
-                          <li>Tips to improve your chances of success</li>
+                          <li>Interactive quizzes and audio exercises</li>
                         </ul>
                       </>
                     )}

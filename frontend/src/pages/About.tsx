@@ -62,26 +62,67 @@ const About = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900">Meet Our Team</h2>
             <p className="mt-4 text-lg text-gray-500">
-              Dedicated professionals committed to your success
+              Dedicated professionals guiding your educational journey.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {team.map((member) => (
-              <div
-                key={member.id}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
-              >
-                <img src="/images/zahid.jpg" alt="Zahid" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {/* Avi */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-6">
+              <img
+                src="/images/avi.jpg"
+                alt="Avi"
+                className="w-32 h-32 rounded-full mx-auto object-cover"
+              />
+              <h3 className="text-xl font-semibold text-gray-900 mt-4">Avi</h3>
+              <p className="text-sky-600 font-medium">Co-Founder & Advisor</p>
+              <p className="mt-4 text-gray-600 text-sm text-left">
+                Holds a Master’s degree in International Business from HTW
+                Berlin with extensive experience in sales, marketing, and
+                customer support. Offers expert guidance on studying and
+                adapting to academic and professional life in Germany.
+              </p>
+            </div>
 
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900">
-                    {member.name}
-                  </h3>
-                  <p className="text-sky-blue">{member.role}</p>
-                  <p className="mt-4 text-gray-600">{member.bio}</p>
-                </div>
-              </div>
-            ))}
+            {/* Zahid */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-6">
+              <img
+                src="/images/zahid.jpg"
+                alt="Zahid"
+                className="w-32 h-32 rounded-full mx-auto object-cover"
+              />
+              <h3 className="text-xl font-semibold text-gray-900 mt-4">
+                Zahid Hussain
+              </h3>
+              <p className="text-sky-600 font-medium">
+                Co-Founder & Student Mentor
+              </p>
+              <p className="mt-4 text-gray-600 text-sm text-left">
+                Brings deep experience in language instruction, student
+                mentoring, and educational consulting. Specializes in preparing
+                students for academic success, language exams, and smooth
+                cultural transition abroad.
+              </p>
+            </div>
+
+            {/* Hassan */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-6">
+              <img
+                src="/images/hassan.jpg"
+                alt="Hassan"
+                className="w-32 h-32 rounded-full mx-auto object-cover"
+              />
+              <h3 className="text-xl font-semibold text-gray-900 mt-4">
+                Hassan Raza
+              </h3>
+              <p className="text-sky-600 font-medium">
+                Junior Advisor & Backend Support
+              </p>
+              <p className="mt-4 text-gray-600 text-sm text-left">
+                Supports backend operations and student services with accuracy
+                and dedication. Handles documentation, inquiries, and follow-ups
+                to ensure timely and efficient support throughout the process.
+              </p>
+            </div>
           </div>
         </div>
       </div>

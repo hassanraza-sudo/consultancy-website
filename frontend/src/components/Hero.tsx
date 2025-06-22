@@ -24,10 +24,10 @@ const Hero = () => {
           today’s highly competitive global landscape.
         </p>
         <div className="mt-10 flex space-x-4">
-          <BookConsultation
+          {/* <BookConsultation
             consultationType="free"
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sky-blue hover:bg-sky-700"
-          />
+          /> */}
           <Link
             to="/services"
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-transparent border-white hover:bg-white hover:text-midnight-blue"

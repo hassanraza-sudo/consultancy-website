@@ -109,7 +109,7 @@ const Contact = () => {
                     <p className="mt-1 text-gray-600">info@studien-route.com</p>
                   </div>
                 </div>
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <MapPin className="h-6 w-6 text-sky-blue mt-1" />
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-gray-900">
@@ -120,7 +120,7 @@ const Contact = () => {
                       10555 Berlin, Germany
                     </p>
                   </div>
-                </div>
+                </div> */}
                 <div className="flex items-start">
                   <MessageSquare className="h-6 w-6 text-sky-blue mt-1" />
                   <div className="ml-4">
@@ -144,7 +144,7 @@ const Contact = () => {
             </div>
 
             {/* Office Hours */}
-            <div className="bg-white rounded-lg shadow-md p-8">
+            {/* <div className="bg-white rounded-lg shadow-md p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
                 Office Hours
               </h2>
@@ -155,7 +155,7 @@ const Contact = () => {
                 <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p>
                 <p className="text-gray-600">Sunday: Closed</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
