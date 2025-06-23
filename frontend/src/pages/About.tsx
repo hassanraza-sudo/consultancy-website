@@ -86,7 +86,7 @@ const About = () => {
             {/* Zahid */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-6">
               <img
-                src="/zahid.jpg"
+                src="/images/zahid.jpg"
                 alt="Zahid"
                 className="w-32 h-32 rounded-full mx-auto object-cover"
               />
