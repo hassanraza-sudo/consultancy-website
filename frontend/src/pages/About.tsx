@@ -86,7 +86,7 @@ const About = () => {
             {/* Zahid */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-6">
               <img
-                src="/images/zahid.jpg"
+                src="/zahid.jpg"
                 alt="Zahid"
                 className="w-32 h-32 rounded-full mx-auto object-cover"
               />
@@ -107,7 +107,7 @@ const About = () => {
             {/* Hassan */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-6">
               <img
-                src="/images/hassan.jpg"
+                src="./images/hassan.jpg"
                 alt="Hassan"
                 className="w-32 h-32 rounded-full mx-auto object-cover"
               />
