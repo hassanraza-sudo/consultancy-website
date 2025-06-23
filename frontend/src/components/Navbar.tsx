@@ -95,19 +95,19 @@ const Navbar = () => {
             >
               Services
             </Link>
-            <Link
+            {/* <Link
               to="/blog"
               className="text-white block px-3 py-2 hover:bg-sky-blue rounded-md"
             >
               Blog
-            </Link>
+            </Link> */}
             <Link
               to="/contact"
               className="text-white block px-3 py-2 hover:bg-sky-blue rounded-md"
             >
               Contact
             </Link>
-            <BookConsultation className="w-full text-center bg-sky-blue text-white px-4 py-2 rounded-md hover:bg-sky-700" />
+            {/* <BookConsultation className="w-full text-center bg-sky-blue text-white px-4 py-2 rounded-md hover:bg-sky-700" /> */}
           </div>
         </div>
       )}
