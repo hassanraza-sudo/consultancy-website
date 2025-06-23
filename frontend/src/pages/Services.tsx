@@ -42,7 +42,8 @@ const Services = () => {
     },
     {
       title: "Full Support Package",
-      price: "€599",
+      price: "€500",
+      originalPrice: "€599",
       description: "Complete solution from application to settlement.",
       features: [
         "All services from Starter, Arrival & Language",
@@ -53,6 +54,7 @@ const Services = () => {
       ],
       type: "full",
       highlight: true,
+      discount: true,
     },
   ];
 
@@ -97,16 +99,29 @@ const Services = () => {
             {packages.map((pkg, index) => (
               <div
                 key={index}
-                className={`flex flex-col justify-between rounded-xl shadow-lg p-6 transition-transform duration-300 hover:scale-105 text-center ${
+                className={`relative flex flex-col justify-between rounded-xl shadow-lg p-6 transition-transform duration-300 hover:scale-105 text-center ${
                   pkg.highlight
                     ? "bg-midnight-blue text-white"
                     : "bg-white text-gray-900"
                 }`}
               >
+                {/* Discount Badge */}
+                {pkg.discount && (
+                  <div className="absolute top-0 left-0 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-tr-xl rounded-bl-xl shadow-md">
+                    Discount
+                  </div>
+                )}
+
                 <div>
-                  <h3 className="text-xl font-semibold">
-                    {pkg.title} – {pkg.price}
-                  </h3>
+                  <h3 className="text-xl font-semibold">{pkg.title}</h3>
+                  <div className="mt-2 text-lg">
+                    {pkg.originalPrice && (
+                      <span className="text-sm line-through text-gray-300 mr-2">
+                        {pkg.originalPrice}
+                      </span>
+                    )}
+                    <span className="font-bold">{pkg.price}</span>
+                  </div>
                   <p className="mt-2 text-sm opacity-80">{pkg.description}</p>
                   <ul className="mt-4 space-y-2 text-sm list-none">
                     {pkg.features.map((f, i) => (
@@ -121,17 +136,13 @@ const Services = () => {
                     ))}
                   </ul>
                 </div>
-                {/* <BookConsultation
-                  consultationType={pkg.type}
-                  className="mt-6 w-full bg-sky-blue text-white py-2 px-4 rounded-md hover:bg-sky-700"
-                /> */}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* À la Carte */}
+      {/* À la Carte Services */}
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
