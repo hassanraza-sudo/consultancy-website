@@ -68,11 +68,11 @@ const About = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {/* Avi */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-6">
-              <img
+              {/* <img
                 src="/images/avi.jpg"
                 alt="Avi"
                 className="w-32 h-32 rounded-full mx-auto object-cover"
-              />
+              /> */}
               <h3 className="text-xl font-semibold text-gray-900 mt-4">Avi</h3>
               <p className="text-sky-600 font-medium">Co-Founder & Advisor</p>
               <p className="mt-4 text-gray-600 text-sm text-left">
