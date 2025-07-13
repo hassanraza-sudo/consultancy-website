@@ -30,12 +30,9 @@ const Courses = () => {
     ),
     "Top Universities": (
       <ul className="list-disc pl-6 text-gray-700 space-y-2">
-        <li>Technical University of Munich (TUM)</li>
-        <li>RWTH Aachen University</li>
-        <li>Heidelberg University</li>
-        <li>Freie Universität Berlin</li>
-        <li>Ludwig Maximilian University of Munich (LMU)</li>
-        <li>Karlsruhe Institute of Technology (KIT)</li>
+        <h3>
+          Partnered with top-ranked universities across Germany and Europe
+        </h3>
       </ul>
     ),
   };

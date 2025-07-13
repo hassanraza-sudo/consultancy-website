@@ -61,7 +61,7 @@ const Footer = () => {
           <ul className="text-sm text-gray-300 space-y-3">
             <li className="flex items-center">
               <Phone className="h-4 w-4 mr-2 text-sky-400" />
-              +49 1575 3620211
+              +49 1575 5661506
             </li>
             <li className="flex items-center">
               <Mail className="h-4 w-4 mr-2 text-sky-400" />
@@ -93,7 +93,7 @@ const Footer = () => {
 
       {/* Bottom */}
       <div className="border-t border-gray-700 py-6 text-center text-sm text-gray-400">
-        &copy; {new Date().getFullYear()} Studienhilfe. All rights reserved.
+        &copy; {new Date().getFullYear()} StudienRoute. All rights reserved.
       </div>
     </footer>
   );

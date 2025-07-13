@@ -85,11 +85,11 @@ const About = () => {
 
             {/* Zahid */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-6">
-              <img
+              {/* <img
                 src="/images/zahid.jpg"
                 alt="Zahid"
                 className="w-32 h-32 rounded-full mx-auto object-cover"
-              />
+              /> */}
               <h3 className="text-xl font-semibold text-gray-900 mt-4">
                 Zahid Hussain
               </h3>
@@ -106,11 +106,11 @@ const About = () => {
 
             {/* Hassan */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-6">
-              <img
+              {/* <img
                 src="./images/hassan.jpg"
                 alt="Hassan"
                 className="w-32 h-32 rounded-full mx-auto object-cover"
-              />
+              /> */}
               <h3 className="text-xl font-semibold text-gray-900 mt-4">
                 Hassan Raza
               </h3>
