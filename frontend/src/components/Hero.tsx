@@ -9,8 +9,15 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           className="w-full h-full object-cover opacity-20"
-          src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=1200"
-          alt="Students studying abroad"
+          src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1200&q=80
+
+
+
+
+
+
+"
+          alt="Students abroad"
         />
       </div>
       <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">

@@ -39,6 +39,7 @@ const Home = () => {
   return (
     <div>
       <Hero />
+
       {/* Services Section */}
       <section className="bg-gray-50 py-16" data-aos="fade-up">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
