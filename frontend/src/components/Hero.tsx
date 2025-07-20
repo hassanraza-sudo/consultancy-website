@@ -10,12 +10,6 @@ const Hero = () => {
         <img
           className="w-full h-full object-cover opacity-20"
           src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1200&q=80
-
-
-
-
-
-
 "
           alt="Students abroad"
         />
