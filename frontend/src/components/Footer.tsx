@@ -48,9 +48,14 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              {/* <Link to="/book" className="hover:text-white">
-                Book Consultation
-              </Link> */}
+              <Link to="/privacy-policy" className="hover:text-white">
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link to="/terms-of-use" className="hover:text-white">
+                Terms of Use
+              </Link>
             </li>
           </ul>
         </div>
@@ -92,8 +97,19 @@ const Footer = () => {
       </div>
 
       {/* Bottom */}
-      <div className="border-t border-gray-700 py-6 text-center text-sm text-gray-400">
-        &copy; {new Date().getFullYear()} StudienRoute. All rights reserved.
+      <div className="border-t border-gray-700 py-6 text-center text-sm text-gray-400 space-y-1">
+        <div>
+          &copy; {new Date().getFullYear()} StudienRoute. All rights reserved.
+        </div>
+        <div className="space-x-2">
+          <Link to="/privacy-policy" className="hover:text-white">
+            Privacy Policy
+          </Link>
+          |
+          <Link to="/terms-of-use" className="hover:text-white">
+            Terms of Use
+          </Link>
+        </div>
       </div>
     </footer>
   );

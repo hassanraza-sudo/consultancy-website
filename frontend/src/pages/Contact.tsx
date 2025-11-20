@@ -1,7 +1,34 @@
-import React from "react";
-import { Phone, Mail, MapPin, MessageSquare } from "lucide-react";
+import React, { useState } from "react";
+import { Phone, Mail, MessageSquare } from "lucide-react";
+import axios from "axios";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.id]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    try {
+      await axios.post("http://localhost:5000/api/contact", formData);
+      setStatus("✅ Message sent successfully!");
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      console.error(error);
+      setStatus("❌ Failed to send message.");
+    }
+  };
+
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
@@ -24,7 +51,7 @@ const Contact = () => {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
               Send us a Message
             </h2>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="space-y-6">
                 <div>
                   <label
@@ -36,6 +63,9 @@ const Contact = () => {
                   <input
                     type="text"
                     id="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
                     className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-sky-blue focus:border-sky-blue"
                   />
                 </div>
@@ -49,6 +79,9 @@ const Contact = () => {
                   <input
                     type="email"
                     id="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
                     className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-sky-blue focus:border-sky-blue"
                   />
                 </div>
@@ -62,6 +95,9 @@ const Contact = () => {
                   <input
                     type="text"
                     id="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    required
                     className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-sky-blue focus:border-sky-blue"
                   />
                 </div>
@@ -75,6 +111,9 @@ const Contact = () => {
                   <textarea
                     id="message"
                     rows={4}
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
                     className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-sky-blue focus:border-sky-blue"
                   ></textarea>
                 </div>
@@ -84,6 +123,7 @@ const Contact = () => {
                 >
                   Send Message
                 </button>
+                {status && <p className="text-sm mt-2">{status}</p>}
               </div>
             </form>
           </div>
@@ -109,18 +149,6 @@ const Contact = () => {
                     <p className="mt-1 text-gray-600">info@studien-route.com</p>
                   </div>
                 </div>
-                {/* <div className="flex items-start">
-                  <MapPin className="h-6 w-6 text-sky-blue mt-1" />
-                  <div className="ml-4">
-                    <h3 className="text-lg font-medium text-gray-900">
-                      Office
-                    </h3>
-                    <p className="mt-1 text-gray-600">
-                      Flotowstrasse, 6<br />
-                      10555 Berlin, Germany
-                    </p>
-                  </div>
-                </div> */}
                 <div className="flex items-start">
                   <MessageSquare className="h-6 w-6 text-sky-blue mt-1" />
                   <div className="ml-4">
@@ -142,20 +170,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-
-            {/* Office Hours */}
-            {/* <div className="bg-white rounded-lg shadow-md p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                Office Hours
-              </h2>
-              <div className="space-y-2">
-                <p className="text-gray-600">
-                  Monday - Friday: 9:00 AM - 6:00 PM
-                </p>
-                <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p>
-                <p className="text-gray-600">Sunday: Closed</p>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

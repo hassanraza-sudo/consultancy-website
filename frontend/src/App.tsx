@@ -13,6 +13,8 @@ import VisaProcess from "./pages/VisaProcess";
 import Courses from "./pages/Courses";
 import CostOfLiving from "./pages/CostOfLiving";
 import WorkOpportunities from "./pages/WorkOpportunities";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfUse from "./pages/TermsOfUse";
 
 function App() {
   return (
@@ -49,6 +51,8 @@ function App() {
             component={Accommodation}
           />
           <Route path="/study-in-germany/faq" component={FAQ} /> */}
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-use" element={<TermsOfUse />} />
         </Routes>
       </div>
       <Footer />
