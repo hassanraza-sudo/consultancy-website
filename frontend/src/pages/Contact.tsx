@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Phone, Mail, MessageSquare } from "lucide-react";
 import axios from "axios";
 
